@@ -1,2 +1,3 @@
-{'task': 'Find a job', 'priority': 'high', 'creation date': '2023-07-29', 'due date': '2023-09-01', 'status': 'To do', 'notes': 'Good luck'}
-{'task': 'jog', 'priority': 'low', 'creation date': '2023-07-29', 'due date': '2023-07-29', 'status': 'To do', 'notes': 'run'}
+{'task': 'find a job', 'priority': 'high', 'creation date': '2023-07-29', 'due date': '2023-09-27', 'status': 'To do', 'notes': 'NOOOO'}
+{'task': 'get a job', 'priority': 'high', 'creation date': '2023-07-29', 'due date': '2023-09-01', 'status': 'to do', 'notes': 'if you dont get a job  you will be homeless'}
+{'task': 'clean the house', 'priority': 'normal', 'creation date': '2023-07-29', 'due date': '2023-07-29', 'status': 'to do', 'notes': 'make it clean'}
