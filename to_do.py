@@ -1,10 +1,15 @@
+from datetime import date
+
 def add_task():
     
     with open ('todo.txt', 'a') as file:
         to_do_list = {}
-        to_do_list['task'] = input('Enter a task.')
-        to_do_list['due date'] = input('Enter a a due date yyyy/mm/dd.')
+        to_do_list['task'] = input('Enter a task name.')
         to_do_list['priority'] = input('Enter a priority level low/normal/high.')
+        to_do_list['creation date'] = str(date.today())
+        to_do_list['due date'] = input('Enter a a due date yyyy/mm/dd.')
+        to_do_list['status'] = 'To do'
+        to_do_list['notes'] = input('Enter your notes regarding task.')
         file.write(str(to_do_list)+'\n')
         
 def show_list():
@@ -29,6 +34,7 @@ def mark_as_done():
             for i in to_do_list:
                 file.write(str(i) + '\n')
         
-mark_as_done()              
-# add_task()
+#mark_as_done()              
+add_task()
 show_list()
+
