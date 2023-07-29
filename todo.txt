@@ -1,2 +1,2 @@
-{'task': 'jog', 'due date': '20230405', 'priority': 'low', 'status': 'done'}
-{'task': 'drink', 'due date': '20240609', 'priority': 'low'}
+{'task': 'Find a job', 'priority': 'high', 'creation date': '2023-07-29', 'due date': '2023-09-01', 'status': 'To do', 'notes': 'Good luck'}
+{'task': 'jog', 'priority': 'low', 'creation date': '2023-07-29', 'due date': '2023-07-29', 'status': 'To do', 'notes': 'run'}
