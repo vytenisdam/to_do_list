@@ -1,7 +1,7 @@
 from datetime import date
 
 def add_task():
-    
+    '''Adds a task to a file.'''   
     with open ('todo.txt', 'a') as file:
         to_do_list = {}
         to_do_list['task'] = input('Enter a task name.')
@@ -13,14 +13,14 @@ def add_task():
         file.write(str(to_do_list)+'\n')
         
 def show_list():
-    
+    '''Shows all tasks.'''
     with open('todo.txt', 'r') as file:
         tasks = file.readlines()
         for i in tasks:
             print(eval(i))
           
 def mark_as_done():
-    
+    '''Marks specified task as done'''
     with open ('todo.txt', 'r') as file:
         tasks = file.readlines()
         task = input('Which task would you like to mark as complete: ')
@@ -35,9 +35,9 @@ def mark_as_done():
                 file.write(str(i) + '\n')
 
 def update_task():
-    
+    '''Updates selected task and selected attribute'''
     task = input('Which task would you like to update? ')
-    category = input('Which category')
+    attribute = input('Which attribute')
     with open ('todo.txt', 'r') as file:
         tasks = file.readlines()
         to_do_list = []
@@ -45,13 +45,13 @@ def update_task():
             to_do_list.append(eval(i))
         for i in to_do_list:
             if i['task'] == task:
-                to_do_list[to_do_list.index(i)][category] = input('Type your change.')
+                to_do_list[to_do_list.index(i)][attribute] = input('Type your change.')
         with open ('todo.txt', 'w') as file:
             for i in to_do_list:
                 file.write(str(i) + '\n')
                 
 def view_tasks():
-    
+    '''View tasks by date creation or due.'''
     view = input('Would you like to see tasks by creation date or due date? ')
     date = input('Which date interests you: ')
     with open('todo.txt', 'r') as file:
@@ -67,7 +67,7 @@ def view_tasks():
             print(i)
                         
 def delete_task():
-    
+    '''Deletes selected task.'''
     deletion = input('Which task would you like to delete? ')
     with open('todo.txt', 'r') as file:
         tasks = file.readlines()
@@ -82,7 +82,7 @@ def delete_task():
                 file.write(str(i) + '\n')
                 
 def view_tasks_due_today():
-    
+    '''Shows all tasks due today.'''
     with open('todo.txt', 'r') as file:
         to_do_list = []
         tasks = file.readlines()
